@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  /* background-color: #f0f0f0; */
+}
+
+header {
+  /* background-color: #333; */
+  /* color: #fff; */
+  padding: 20px;
+  text-align: center;
+  /* display: flex; */
+}
+
+/* .h1-heading {
+  text-align: center;
+} */
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.all-songs,
+.song-card,
+.playlist-container {
+  width: 26%;
+  /* background-color: #fff; */
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.all-songs select {
+  margin-bottom: 10px;
+}
+
+#song-info {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#song-image {
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* background-color: #0d0d2b; */
+}
+
+.song-card #song-details {
+  text-align: center;
+}
+
+.song-card #audio-player {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.song-card button {
+  margin-top: 10px;
+  display: block;
+}
+
+.fix-create-playlist {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* .playlist button {
+  margin-top: 10px;
+  display: block;
+} */
+.playlist {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#playlistName {
+  flex: 1;
+  width: 0%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 20%;
+  /* width: 200px; Adjust width as needed */
+  /* box-sizing: border-box; */
+}
+
+/* Add more CSS styling as needed */
+
+/* .song-button:hover {
+  background-color: #2980b9;
+} */
+#current-playlist-container {
+  width: 100%;
+}
+
+#All-playlist-container {
+  width: 100%;
+}
+
+.playlist-item {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: center;
+}
+
+.playlist-button {
+  min-width: 50%;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.song-button-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+.song-button {
+  /* background-color: #3498db;
+  color: #fff; */
+  width: 90%;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.remove-button {
+  /* width: 90%; */
+  background-color: #e74c3c; /* Red color for remove button */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: lightsalmon;
+}
+
+.control-button {
+  /* background-color: gray;
+  color: white; */
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.control-button:hover {
+  background-color: lightgray;
+}
+
+/* Styles for each playlist section */
+
+/* Styles for playlist titles */
+.playlist h2 {
+  margin-top: 10;
+}
+
+/* Light Theme */
+body.light-theme {
+  background-color: #e6e6e6;
+  color: #3f506e;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Pacifico", cursive; */
+}
+
+/* .light-theme header button {
+  background-color: #e6e6e6;
+  color: #3f506e;
+} */
+
+.light-theme header {
+  background-color: #3f506e;
+  color: #fff;
+}
+
+.light-theme .all-songs select {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Light Theme */
+.light-theme .control-button {
+  background-color: gray;
+  color: white;
+}
+
+.light-theme .control-button:hover {
+  background-color: lightgray;
+}
+
+.light-theme .song-button {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.light-theme .song-button:hover {
+  background-color: #2980b9;
+}
+
+.light-theme .playlist-button {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.light-theme .playlist-button:hover {
+  background-color: #2980b9;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #0d0d2b;
+  color: #646c94;
+}
+
+.dark-theme header {
+  background-color: #220d42;
+  color: #646c94;
+}
+
+.dark-theme .all-songs select {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme input {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme .control-button {
+  background-color: #363e5d;
+  color: #fff;
+}
+
+.dark-theme .control-button:hover {
+  background-color: gray;
+}
+
+.dark-theme .song-button {
+  background-color: #3c4d58;
+  color: #fff;
+}
+
+.dark-theme .song-button:hover {
+  background-color: #14344a;
+}
+
+.dark-theme .playlist-button {
+  background-color: #3c4d58;
+  color: #fff;
+}
+
+.dark-theme .playlist-button:hover {
+  background-color: #14344a;
+}

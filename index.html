@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>S Club</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="light-theme">
+    <!-- header starts -->
+
+    <header>
+      <h1 class="h1-heading">Music App</h1>
+      <button onclick="toggleTheme()">Toggle Theme</button>
+    </header>
+
+    <!-- header end -->
+
+    <div class="container">
+      <!-- All Song Secction -->
+
+      <div class="all-songs">
+        <h2>All Songs</h2>
+        <select id="your-select-id">
+          <option value="">All Genres</option>
+          <option value="Pop">Pop</option>
+          <option value="Rock">Rock</option>
+          <!-- Add more genre options as needed -->
+        </select>
+        <div id="all-songs-container">
+          <!-- Songs will be rendered here -->
+        </div>
+      </div>
+
+      <div class="song-card">
+        <h2>Song Card</h2>
+        <div id="song-info">
+          <img id="song-image" src="" alt="Song Image" />
+          <div id="song-details">
+            <p id="song-name">Song name</p>
+            <p id="artist-name">Artist Name</p>
+          </div>
+        </div>
+        <audio id="audio-player" controls></audio>
+        <div class="fix-create-playlist">
+          <button onclick="playPreviousSong()" class="control-button">
+            Previous
+          </button>
+          <button onclick="playNextSong()" class="control-button">Next</button>
+        </div>
+        <button onclick="addToPlaylist()" class="control-button">
+          Add to Playlist
+        </button>
+      </div>
+
+      <div class="playlist-container">
+        <div class="playlist">
+          <div class="fix-create-playlist">
+            <input
+              type="text"
+              id="playlistName"
+              placeholder="Enter playlist name"
+            />
+            <button onclick="createPlaylist()" class="control-button">
+              Create Playlist
+            </button>
+          </div>
+        </div>
+        <div class="playlist">
+          <h2>Current Playlist</h2>
+          <div id="current-playlist-container">
+            <!-- Current playlist songs will be rendered here -->
+          </div>
+        </div>
+        <div class="playlist">
+          <h2>All Playlists</h2>
+          <div id="All-playlist-container">
+            <!-- All playlists will be rendered here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- playlist end
+      space -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
